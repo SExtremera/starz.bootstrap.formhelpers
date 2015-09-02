@@ -1,0 +1,32 @@
+{
+    "name": "starz.bootstrap.formhelpers",
+    "description": "A fork of https://github.com/winmarkltd/BootstrapFormHelpers with some changes for starz",
+    "keywords": [
+      "formhelpers",
+        "bootstrap"
+    ],
+    "license": ["MIT", "GPL"],
+    "type": "component",
+    "homepage": "https://github.com/ludobermejo/starz.bootstrap.formhelpers",
+    "authors": [
+        {
+            "name": "LudoBermejo (using winmarkltd code)",
+            "homepage": "http://www.ludobermejo.es"
+        }
+    ],
+    "require": {
+        "components/bootstrap": ">=3"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "starz.bootstrap.formhelpers.js"
+            ],
+            "shim": {
+                "deps": [
+                    "bootstrap"
+                ]
+            }
+        }
+    }
+}
