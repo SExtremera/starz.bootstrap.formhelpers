@@ -26,7 +26,7 @@
     "docs": "https://github.com/ludobermejo/starz.bootstrap.formhelpers",
     "download": "https://github.com/ludobermejo/starz.bootstrap.formhelpers/starz.bootstrap.formhelpers.js",
     "dependencies": {
-        "bootstrap": "3.0.0"
+        "bootstrap": "3.3.5"
     },
     "main": "starz.bootstrap.formhelpers.js"
 }
