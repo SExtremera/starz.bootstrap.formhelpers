@@ -157,6 +157,12 @@ var BFHCountryPrefixesList = {
 
             this.$element.val(this.options.value);
 
+            if(this.$element.data("label") != "") {
+                var label = $("#" + this.$element.data("label"));
+                label.addClass("into_combo");
+                this.$element.prepend(label.show());
+            }
+
             this.$element
                 .on('click.bfhselectbox.data-api touchstart.bfhselectbox.data-api', toggle, BFHSelectBox.prototype.toggle)
                 .on('keydown.bfhselectbox.data-api', toggle + ', [role=option]' , BFHSelectBox.prototype.keydown)
@@ -294,6 +300,7 @@ var BFHCountryPrefixesList = {
 
             $parent = getParent($this);
 
+            $(".into_combo", $parent).remove();
             $parent.val($this.data('option'));
             $parent.trigger('change.bfhselectbox');
 
@@ -597,14 +604,14 @@ var BFHCountryPrefixesList = {
                     if (this.options.flags === true) {
                         if (this.options.prefix === true) {
                             listItem = '<li><a class="bfh-selector-countryname" tabindex="-1" href="#" data-option="' + country + '"><i class="glyphicon bfh-flag-' + country + '"></i>' + countries[country] +
-                                        '<span class="bfh-selectbox-prefix">' + BFHCountryPrefixesList[country] + '</span></a></li>';
+                                '<span class="bfh-selectbox-prefix">' + BFHCountryPrefixesList[country] + '</span></a></li>';
                         } else {
                             listItem = '<li><a tabindex="-1" href="#" data-option="' + country + '"><i class="glyphicon bfh-flag-' + country + '"></i>' + countries[country] + '</a></li>';
                         }
                     } else {
                         if (this.options.prefix === true) {
                             listItem = '<li><a class="bfh-selector-countryname" tabindex="-1" href="#" data-option="' + country + '">' + countries[country] +
-                                        '<span class="bfh-selectbox-prefix">' + BFHCountryPrefixesList[country] + '</span></a></li>';
+                                '<span class="bfh-selectbox-prefix">' + BFHCountryPrefixesList[country] + '</span></a></li>';
                         } else {
                             listItem = '<li><a tabindex="-1" href="#" data-option="' + country + '">' + countries[country] + '</a></li>';
                         }
