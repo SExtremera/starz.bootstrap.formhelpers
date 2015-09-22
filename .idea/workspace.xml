@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40f6ca57-fa95-4f91-a262-4e98b1832c77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starz.bootstrap.formhelpers.json" afterPath="$PROJECT_DIR$/starz.bootstrap.formhelpers.json" />
-    </list>
+    <list default="true" id="40f6ca57-fa95-4f91-a262-4e98b1832c77" name="Default" comment="" />
     <ignored path="starz.bootstrap.formhelpers.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
