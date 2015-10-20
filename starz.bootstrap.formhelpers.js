@@ -304,6 +304,15 @@ var BFHCountryPrefixesList = {
             $parent.val($this.data('option'));
             $parent.trigger('change.bfhselectbox');
 
+            var optionBox = $('.bfh-selectbox-option');
+            if ($this.data('option')) {
+                optionBox.removeClass('bfh-option-placeholder-selected');
+            } else {
+                if (!optionBox.hasClass('bfh-option-placeholder-selected')) {
+                    optionBox.addClass('bfh-option-placeholder-selected');
+                }
+            }
+
             clearMenus();
         }
 
@@ -596,7 +605,7 @@ var BFHCountryPrefixesList = {
             $options.html('');
 
             if (this.options.blank === true) {
-                $options.append('<li><a tabindex="-1" href="#" data-option=""></a></li>');
+                $options.append('<li><a tabindex="-1" href="#" data-option="">' + this.options.placeholder + '</a></li>');
             }
 
             for (country in countries) {
@@ -621,6 +630,9 @@ var BFHCountryPrefixesList = {
             }
 
             this.$element.val(value);
+            if (!value) {
+                $('.bfh-selectbox-option').addClass('bfh-option-placeholder-selected');
+            }
         },
 
         displayCountry: function () {
