@@ -304,7 +304,7 @@ var BFHCountryPrefixesList = {
             $parent.val($this.data('option'));
             $parent.trigger('change.bfhselectbox');
 
-            var optionBox = $('.bfh-selectbox-option');
+            var optionBox = $this.parent().parent().parent().parent().parent().find('a .bfh-selectbox-option');
             if ($this.data('option')) {
                 optionBox.removeClass('bfh-option-placeholder-selected');
             } else {
@@ -631,7 +631,7 @@ var BFHCountryPrefixesList = {
 
             this.$element.val(value);
             if (!value) {
-                $('.bfh-selectbox-option').addClass('bfh-option-placeholder-selected');
+                this.$element.find('.bfh-selectbox-option').addClass('bfh-option-placeholder-selected');
             }
         },
 
