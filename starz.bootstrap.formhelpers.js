@@ -42,7 +42,7 @@ var BFHCountriesListEnglish = {
     'SA': 'Saudi Arabia',
     'TN': 'Tunisia',
     'AE': 'UAE',
-    'RW': 'Rest of World'
+    'ES': 'Spain'
 };
 var BFHCountriesListArabic = {
     'DZ': 'الجزائر',
@@ -62,7 +62,7 @@ var BFHCountriesListArabic = {
     'SA': 'السعودية',
     'TN': 'تونس',
     'AE': 'الإمارات',
-    'RW': 'الدول الأخرى'
+    'ES': 'الدول الأخرى'
 };
 var BFHCountriesList = BFHCountriesListEnglish;
 
@@ -84,7 +84,7 @@ var BFHCountryPrefixesList = {
     'SA': '+966',
     'TN': '+216',
     'AE': '+971',
-    'RW': ''
+    'ES': '+34'
 };
 
 
